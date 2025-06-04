@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Agustinus STTRII</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+        <!-- Kiri: Logo dan Teks -->
+        <div class="d-flex align-items-center me-3" 
+             style="color: #1281ff; 
+             text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+             font-weight: bold">
+            <img src="img/logo.png" alt="Logo" width="50" height="50">
+            <div class="ms-2">
+                <div>Perpustakaan Agustinus STTRII</div>
+                <div>STT Reformed Injili Internasional</div>
+                <div>NPP.3171032B2014841</div>
+            </div>
+        </div>
+
+        <!-- Kanan: Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0" 
+            style="margin-left: 300px; text-shadow: none;">
+                <!-- Menu Profil -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" >Profil</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://sttrii.ac.id/tentang-kami/sejarah/" target="_blank">Profil Perpustakaan</a></li>
+                        <li><a class="dropdown-item" href="visimisi.html" target="_blank">Visi, Misi & Tujuan</a></li>
+                        <li><a class="dropdown-item" href="https://docs.google.com/document/d/1769vsFp6KkB94W8j24awWZ7TnnhrsJSi/edit?usp=sharing&ouid=109220965687961198060&rtpof=true&sd=true" target="_blank">Struktur Organisasi</a></li>
+                        <li><a class="dropdown-item" href="https://sttrii.ac.id/tentang-kami/staf/" target="_blank">Tim Perpustakaan</a></li>
+                        <li><a class="dropdown-item" href="#members">Kerjasama</a></li>
+                    </ul>
+                </li>
+
+        <!-- Menu Koleksi -->
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="koleksiDropdown" role="button" data-bs-toggle="dropdown">Koleksi</a>
+  <ul class="dropdown-menu" style="width:250px; background-color:white;">
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Katalog Online</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://library.sttrii.ac.id/" target="_blank">Koleksi Indonesia-Inggris</a></li>
+        <li><a class="dropdown-item" href="https://library.sttrii.ac.id/librarymandarin/" target="_blank">Koleksi Mandarin</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="https://repository.sttrii.ac.id/" target="_blank">STTRII Repositori</a></li>
+    <li><a class="dropdown-item" href="jurnal.html" target="_blank">Jurnal Elektronik</a></li>
+    <li><a class="dropdown-item" href="https://library.sttrii.ac.id/index.php?csrf_token=3075d6a7a467e34bc00c03096d8c9eea21c87e3888409515587452ac5b5c138fb65dfd&title=&author=&subject=&isbn=&publishyear=&location=0&gmd=0&colltype=e-book&search=search" target="_blank">Buku Elektronik</a></li>
+    
+  </ul>
+</li>
+                <!-- Menu Layanan -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button" data-bs-toggle="dropdown">Layanan</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://library.sttrii.ac.id/index.php?p=libinfo" target="_blank">Jam Pelayanan</a></li>
+                        <li><a class="dropdown-item" href="ruangperpus.html">Ruang Layanan Perpustakaan</a></li>
+                        <li><a class="dropdown-item" href="#">Survei Kepuasan Pengguna</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Fasilitas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="fasilitasDropdown" role="button" data-bs-toggle="dropdown">Fasilitas</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                        <li><a class="dropdown-item" href="#">Denah Lantai</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Berita -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="beritaDropdown" role="button" data-bs-toggle="dropdown">Berita</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://sttrii.ac.id/akademik/perpustakaan-agustinus/" target="_blank">Perpustakaan Agustinus</a></li>
+                        <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                        <li><a class="dropdown-item" href="https://sttrii.ac.id/blog/" target="_blank">Seputar STTRII</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Unduh -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="unduhDropdown" role="button" data-bs-toggle="dropdown">Unduh</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Peraturan Perpustakaan</a></li>
+                        <li><a class="dropdown-item" href="#">Bebas Pustaka</a></li>
+                        <li><a class="dropdown-item" href="#">Pengajuan Koleksi</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+
+    <div class="carousel-inner slide" id="hero-slide">
+        <div class="carousel-item active">
+            <img src="img/ruangbacalt6.jpeg" class="d-block center w-100 " alt="Hero 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/ruangbacalt7.jpeg" class="d-block w-100" alt="Hero 2">
+        </div>
+        <div class="carousel-item">
+            <img src="img/ruangbacalt8.jpeg" class="d-block w-100" alt="Hero 3">
+        </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+
+</div>
+
+
+<!-- Layanan Perpustakaan -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="mb-4 fw-bold">LAYANAN PERPUSTAKAAN</h2>
+        <div class="row justify-content-center ">
+
+            <!-- Katalog Online -->
+            <div class="col-md-3 mb-4 layanan-item">
+                <img src="img/katalog.png" class="img-fluid rounded-circle mb-3 animate" alt="Katalog Online">
+                <h5 class="fw-bold animate"> <a href="https://library.sttrii.ac.id/" target="_blank" style="text-decoration:none;">KATALOG ONLINE</a></h5>
+                <hr>
+                <p class="animate">OPAC (Online Public Access Catalogue)</p>
+            </div>
+
+            <!-- Jurnal Elektronik -->
+            <div class="col-md-3 mb-4 layanan-item">
+                <img src="img/jurnal.png" class="img-fluid rounded-circle mb-3 animate" alt="Jurnal Elektronik">
+                <h5 class="fw-bold animate"><a href="jurnal.html" target="_blank" style="text-decoration:none;">JURNAL ELEKTRONIK</a></h5>
+                <hr>
+                <p class="animate">Jurnal elektronik bereputasi yang dilanggan oleh STTRII</p>
+            </div>
+
+            <!-- Buku Elektronik -->
+            <div class="col-md-3 mb-4 layanan-item">
+                <img src="img/buku.png" class="img-fluid rounded-circle mb-3 animate" alt="Buku Elektronik">
+                <h5 class="fw-bold animate"><a href="https://library.sttrii.ac.id/index.php?csrf_token=3075d6a7a467e34bc00c03096d8c9eea21c87e3888409515587452ac5b5c138fb65dfd&title=&author=&subject=&isbn=&publishyear=&location=0&gmd=0&colltype=e-book&search=search" target="_blank" style="text-decoration:none;">BUKU ELEKTRONIK</a></h5>
+                <hr>
+                <p class="animate">Buku elektronik yang dimiliki oleh STTRII</p>
+            </div>
+
+            <!-- Repository -->
+            <div class="col-md-3 mb-4 layanan-item">
+                <img src="img/repositori.png" class="img-fluid rounded-circle mb-3 animate" alt="Repository STTRII">
+                <h5 class="fw-bold animate"><a href="https://repository.sttrii.ac.id/" target="_blank" style="text-decoration:none;">Repository STTRII</a></h5>
+                <hr>
+                <p class="animate">Terdiri dari karya-karya oleh dan/atau tentang akademik dalam bentuk dokumen elektronik</p>
+            </div>
+
+            <!-- Cek Pinjaman -->
+            <div class="col-md-3 mb-4 layanan-item">
+                <img src="img/scan.png" class="img-fluid rounded-circle mb-3 animate" alt="Cek Pinjaman">
+                <h5 class="fw-bold animate"><a href="https://library.sttrii.ac.id/index.php?p=member" target="_blank">Cek Pinjaman</a></h5>
+                <hr>
+                <p class="animate">Gunakan NIM Anda sebagai ID dan Password</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Berita Perpustakaan -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="mb-3 fw-bold animate">BERITA PERPUSTAKAAN</h2>
+        <p class="animate">Berita Seputar Perpustakaan</p>
+
+        <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <img src="img/berita1.jpeg" class="d-block w-100 rounded mb-3" alt="Berita 1">
+                            <h5>PERPUSTAKAAN STTRII MENERIMA KUNJUNGAN PESERTA OPEN HOUSE STTRII 2025</h5>
+                            <p>Jakarta, 28/05/2025. Perpustakaan Agustinus STTRII menerima rombongan peserta open house dari berbagai daerah...</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/berita2.png" class="d-block w-100 rounded mb-3" alt="Berita 2"
+                            style="object-fit: cover; object-position: top;">
+                            <h5>SELAMAT HARI RAYA KENAIKAN YESUS KRISTUS</h5>
+                            <p>Perpustakaan Agustinus STTRII mengucapkan Selamat Hari Kenaikan Yesus Kristus...</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/berita3.png" class="d-block w-100 rounded mb-3" alt="Berita 3" 
+                            style="object-fit: cover; object-position: top;">
+                            <h5>SELAMAT HARI RAYA WAISAK 2025</h5>
+                            <p>Perpustakaan Agustinus STTRII mengucapkan Selamat Hari Waisak 2025...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <img src="img/berita4.png" class="d-block w-100 rounded mb-3" alt="Berita 4"
+                            style="object-fit: cover; object-position: top;">
+                            <h5>SELAMAT HARI BURUH 2025</h5>
+                            <p>Perpustakaan Agustinus STTRII mengucapkan Selamat memperingati hari Buruh 2025...</p>
+                        </div>
+                        <!-- Tambah kolom berita lain jika ada -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontrol Next dan Prev -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#beritaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#beritaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Members Of -->
+<section class="py-5 members text-white" style="background-color: slategray;">
+    <div class="container text-center">
+        <h2 class="mb-4 animate" id="members">MEMBERS OF</h2>
+
+        <div id="membersCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-md-4">
+                            <img src="img/member2.jpg" class="d-block mx-auto img-fluid" alt="RAMA">
+                            <p ><a href="https://fkpptki.bkptki.org/" target="_blank" class="text-white" style="text-decoration: none;">FORKOPPTI</a></p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="img/member3.png" class="d-block mx-auto img-fluid" alt="DOAJ">
+                            <p><a href="https://e-resources.perpusnas.go.id/" target="_blank" class="text-white" style="text-decoration: none;">E-RESOURCES PERPUSNAS</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-4">
+                            <img src="img/member5.png" class="d-block mx-auto img-fluid" alt="Perpusnas">
+                            <p><a href="https://plkmomentum.com/" target="_blank" class="text-white" style="text-decoration: none;">MOMENTUM</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/member6.png" class="d-block mx-auto img-fluid" alt="RAMA">
+                            <p><a href="https://www.perlego.com/" target="_blank" class="text-white" style="text-decoration: none;">PERLEGO</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Tambah slide lainnya jika diperlukan -->
+            </div>
+
+            <!-- Kontrol carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#membersCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#membersCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Indicator dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#membersCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#membersCarousel" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4 members">
+    <div class="container">
+        <div class="row">
+            <!-- Kontak (sebelah kiri) -->
+            <div class="col-md-6 text-md-start text-center animate">
+                <h5>KONTAK</h5>
+                <hr class="border-top border-danger" style="width: 50px;">
+                <p><i class="fas fa-map-marker-alt me-2 text-danger"></i>Jl. Industri Blok B14 Kav. 1, Jakarta Pusat-10720</p>
+                <p><i class="fas fa-envelope me-2 text-danger"></i>library@sttrii.ac.id</p>
+                <p><i class="fas fa-phone me-2 text-danger"></i>Tel. (021) 658 678 09, Fax. (021) 658 678 19</p>
+            </div>
+
+
+
+            <!-- Library Link (sebelah kanan) -->
+            <div class="col-md-6 text-md-end text-center animate">
+                <h5>LIBRARY LINK</h5>
+                <hr class="border-top border-danger ms-auto" style="width: 50px;">
+                <ul class="list-unstyled">
+                    <li><a href="https://docs.google.co/forms/d/e/1FAIpQLScn5ABemL6ajshtz4vVDyqSwry96xXlEWInljR7f2yKo1nJiQ/viewform" class="text-light text-decoration-none" target="_blank">Izin Staff</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+<div class="row">
+  <div class="col-12 text-center">
+    <marquee behavior="scroll" direction="left">
+      <small>&copy; 2025 Perpustakaan Agustinus STTRII. Developed by Defy Zega.</small>
+    </marquee>
+  </div>
+</div>
+
+
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script animasi + observer -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll('.animate');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    animatedElements.forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var warningModal = new bootstrap.Modal(document.getElementById('warningModal'), {
+      backdrop: 'static',
+      keyboard: false
+    });
+    warningModal.show();
+  });
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Modal Peringatan -->
+<div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-danger shadow-lg">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title"  id="warningModalLabel" style="text-align: center;">PERHATIAN!</h5>
+      </div>
+      <div class="modal-body text-center">
+        <i class="fas fa-exclamation-triangle fa-3x text-danger mb-3"></i>
+        <p><strong>INI BUKAN WEBSITE PERPUSTAKAAN STT REFORMED INJILI INTERNASIONAL</strong></p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">OKE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

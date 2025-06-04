@@ -1,0 +1,167 @@
+/* style.css */
+
+/* GENERAL STYLING */
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(145deg, #e3f2fd, #bbdefb);
+    color: #0d47a1;
+}
+
+
+
+/* NAVBAR STYLING */
+.navbar-nav {
+    margin-left: 330px !important; /* Posisi menu ke kanan */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Jarak antar item menu */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #1281ff !important; /* Warna teks link navbar */
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;
+    transition: all 0.3s ease; /* Transisi smooth */
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+/* Dropdown muncul saat hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Hilangkan jarak aneh saat hover */
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 9999;
+}
+
+/* Logo teks navbar */
+.d-flex.align-items-center div {
+    line-height: 1.2;
+    font-size: 0.9rem;
+}
+
+/* CAROUSEL STYLING */
+
+#hero-slide {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 0 5px 1px white;
+    overflow: visible !important;
+    position: relative !important;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+    margin-left: 20px;  /* Memberi jarak kiri */
+    margin-right: 20px;  /* Memberi jarak kanan */
+}
+
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover; /* Gambar akan menyesuaikan */
+}
+
+#membersCarousel img {
+    height: 120px; /* Tinggi gambar carousel anggota */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#membersCarousel p a {
+    text-shadow: none !important; /* Hilangkan bayangan pada teks link */
+}
+
+.carousel-control-prev {
+    top: 40%;
+    transform: translateY(-50%);
+    left: -100px; /* Geser tombol prev */
+}
+
+.carousel-control-next {
+    top: 40%;
+    transform: translateY(-50%);
+    right: -100px; /* Geser tombol next */
+}
+
+.carousel-indicators {
+    bottom: -30px; /* Posisi indikator geser ke bawah */
+}
+
+/* LAYANAN PERPUSTAKAAN STYLING */
+.layanan-item {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover */
+    background-color: white;
+}
+
+.layanan-item img {
+    width: 120px;
+    height: 120px;
+    border: 10px solid #cedef0; /* Bingkai gambar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Efek shadow */
+}
+
+.layanan-item hr {
+    width: 100%;
+    border: 2px solid white; /* Garis pemisah */
+}
+
+.layanan-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Hover efek naik dan bayangan */
+}
+
+.layanan-item:active {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Klik efek lebih naik dan bayangan */
+}
+
+.members {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Animasi fade-in-up */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-header {
+  justify-content: center;
+}
